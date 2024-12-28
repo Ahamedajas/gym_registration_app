@@ -1,0 +1,145 @@
+/* Ensure Tailwind's utilities are included */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: url('./assets/gym.webp') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Ensures text is visible on dark backgrounds */
+  overflow: hidden; /* Prevent any unwanted scrollbars */
+}
+
+/* Center the form container */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Remove any extra background and borders from the form container */
+form {
+  background-color: rgba(255, 255, 255, 0.9); /* Light background for form with some transparency */
+  padding: 2rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  margin: 0; /* Ensures no extra space */
+  z-index: 10; /* Ensures form is above background */
+}
+
+/* Input and button styles */
+input, select, button {
+  background-color: #edf2f7; /* Light background for inputs and buttons */
+  color: black;
+  border: 1px solid #d2d6dc;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  width: 100%;
+}
+
+input:focus, select:focus, button:focus {
+  outline: none;
+  border-color: #4a90e2; /* Highlight color for focus */
+}
+
+button {
+  background-color: #4a90e2;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #357ABD;
+}
+
+/* Error text */
+.error {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  color: black;
+}
+
+/* Additional button styling for light mode */
+.btn {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.input {
+  background-color: #edf2f7;
+  color: black;
+  border: 1px solid #d2d6dc;
+}
+
+/* Styles for Payment Form and Unpaid Students Section */
+.payment-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9fafb; /* Light background for the page */
+  padding: 20px;
+}
+
+.payment-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Styling for the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+  background-color: #f7fafc;
+}
+
+/* Table data font styling */
+td {
+  color: #2d3748; /* Dark color for text */
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #357ABD;
+}
